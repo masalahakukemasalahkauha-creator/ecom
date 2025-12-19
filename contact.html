@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Toyyiban Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2135605133/display_1500/stock-vector-natural-halal-logo-simple-modern-minimalist-icon-set-with-green-color-moon-and-star-vector-2135605133.jpg" alt="Toyyiban Logo">
+                <h1>Toyyiban</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="#" id="cart-link" class="cart">Cart (0)</a></li>
+                </ul>
+                <button id="menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Toyyiban Marketplace | No Riba | Fair Trade | Halal Certified</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal (required for cart to work) -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: MYR 0</p>
+            <button id="clear-cart" class="btn secondary">Clear Cart</button>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyyiban Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2135605133/display_1500/stock-vector-natural-halal-logo-simple-modern-minimalist-icon-set-with-green-color-moon-and-star-vector-2135605133.jpg" alt="Toyyiban Logo">
+                <h1>Toyyiban</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-link" class="cart">Cart (0)</a></li>
+                </ul>
+                <button id="menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>Pure. Ethical. Halal.</h2>
+            <p>Sharia-compliant products you can trust.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Same products as before -->
+                <div class="product" data-id="1" data-name="Modest Activewear" data-price="150">
+                    <img src="https://thumbs.dreamstime.com/b/pretty-islamic-woman-hijab-sport-uniform-posing-cropped-view-pretty-islamic-woman-black-hijab-sport-uniform-163860346.jpg" alt="Modest Activewear">
+                    <h3>Modest Activewear</h3>
+                    <p>Hijab-friendly sportswear for active lifestyles.</p>
+                    <span class="price">MYR 150</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="2" data-name="Halal Skincare" data-price="80">
+                    <img src="https://riwaya.riwaya.co.uk/images/blog/24/Untitled_design__43_-modified.png" alt="Halal Skincare">
+                    <h3>Halal Skincare</h3>
+                    <p>Natural, alcohol-free ingredients.</p>
+                    <span class="price">MYR 80</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product" data-id="3" data-name="Premium Dates" data-price="50">
+                    <img src="https://www.shutterstock.com/image-photo/date-fruit-bowl-on-wooden-600w-2139901737.jpg" alt="Premium Dates">
+                    <h3>Premium Dates</h3>
+                    <p>Ethically sourced artisanal dates.</p>
+                    <span class="price">MYR 50</span>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Toyyiban Marketplace | No Riba | Fair Trade | Halal Certified</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal (same on all pages) -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: MYR 0</p>
+            <button id="clear-cart" class="btn secondary">Clear Cart</button>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>

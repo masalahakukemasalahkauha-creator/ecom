@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Toyyiban Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2135605133/display_1500/stock-vector-natural-halal-logo-simple-modern-minimalist-icon-set-with-green-color-moon-and-star-vector-2135605133.jpg" alt="Toyyiban Logo">
+                <h1>Toyyiban</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="cart-link" class="cart">Cart (0)</a></li>
+                </ul>
+                <button id="menu-toggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Toyyiban Marketplace</h2>
+            <p class="intro">Toyyiban Marketplace is a Sharia-compliant e-commerce platform dedicated to providing 100% Halal and <strong>Halalan Toyyiban</strong> products – not just permissible (Halal), but also pure, wholesome, safe, and beneficial (Toyyiban) as commanded in the Quran (Al-Baqarah 2:168).</p>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="https://t3.ftcdn.net/jpg/15/86/50/44/360_F_1586504455_jMkXrtNyR2Ffb0sUnGE282D57Hq8kqY3.jpg" alt="Halal Certification">
+                    <h3>100% Halal Certified</h3>
+                    <p>All products are verified with recognized Halal certifications, ensuring full compliance with Islamic dietary laws.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://pub.mdpi-res.com/economies/economies-10-00134/article_deploy/html/images/economies-10-00134-g001.png?1654765838" alt="Blockchain Traceability">
+                    <h3>Blockchain Traceability</h3>
+                    <p>End-to-end supply chain transparency using blockchain technology – trace every product from source to your doorstep for complete peace of mind.</p>
+                </div>
+                <div class="feature">
+                    <img src="https://hikam.institute/wp-content/uploads/2024/03/Riba-1.jpg" alt="No Riba">
+                    <h3>No Riba & Ethical Finance</h3>
+                    <p>Interest-free transactions, fair trade practices, and a portion of proceeds contributed to Zakat – fully aligned with Sharia principles.</p>
+                </div>
+            </div>
+
+            <h3>Our Mission</h3>
+            <p>We empower Muslim consumers worldwide with a trusted platform for modest activewear, natural skincare, premium dates, and more – all ethically sourced and Toyyiban assured.</p>
+
+            <h3>Why Toyyiban?</h3>
+            <p>Inspired by Islamic teachings, we go beyond basic Halal to ensure products are nutritious, sustainable, and beneficial for body and soul.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Toyyiban Marketplace | No Riba | Fair Trade | Halal Certified</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Total: MYR 0</p>
+            <button id="clear-cart" class="btn secondary">Clear Cart</button>
+            <button id="checkout-btn" class="btn">Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
